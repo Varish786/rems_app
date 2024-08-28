@@ -77,3 +77,5 @@ frappe.ready(function() {
 
 
 
+    // Function to handle the API response and render both table and chart
+    //working

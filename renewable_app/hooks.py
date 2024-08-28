@@ -12,10 +12,12 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/renewable_app/css/renewable_app.css"
 # app_include_js = "/assets/renewable_app/js/renewable_app.js"
+app_include_js = "/assets/renewable_app/js/test.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/renewable_app/css/renewable_app.css"
 # web_include_js = "/assets/renewable_app/js/renewable_app.js"
+# web_include_js = "/assets/renewable_app/js/test.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "renewable_app/public/scss/website"
@@ -133,7 +135,10 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
+	"all": [
+		"frappe.monitor.flush"
+	],
 # 	"all": [
 # 		"renewable_app.tasks.all"
 # 	],
@@ -149,7 +154,7 @@ app_license = "mit"
 # 	"monthly": [
 # 		"renewable_app.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------

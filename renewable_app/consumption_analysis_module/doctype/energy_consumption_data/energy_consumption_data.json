@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "NCD-.####",
+ "creation": "2024-08-25 17:04:31.480817",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "consumer_id",
+  "location",
+  "consumption_amount",
+  "timestamp"
+ ],
+ "fields": [
+  {
+   "fieldname": "consumer_id",
+   "fieldtype": "Link",
+   "label": "Consumer ID",
+   "options": "RenewableEnergy_User"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location "
+  },
+  {
+   "fieldname": "consumption_amount",
+   "fieldtype": "Float",
+   "label": "Consumption Amount"
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "label": "Timestamp "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-28 10:59:49.253806",
+ "modified_by": "Administrator",
+ "module": "Consumption Analysis Module",
+ "name": "Energy Consumption Data",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

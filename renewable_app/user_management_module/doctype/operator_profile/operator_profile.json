@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "OP-.####",
+ "creation": "2024-08-25 17:21:13.046656",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "operator_id",
+  "assigned_locations",
+  "expertise_areas"
+ ],
+ "fields": [
+  {
+   "fieldname": "operator_id",
+   "fieldtype": "Data",
+   "label": "Operator ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "assigned_locations",
+   "fieldtype": "Data",
+   "label": "Assigned Locations"
+  },
+  {
+   "fieldname": "expertise_areas",
+   "fieldtype": "Data",
+   "label": "Expertise Areas"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-28 11:07:51.924987",
+ "modified_by": "Administrator",
+ "module": "User Management Module",
+ "name": "Operator Profile",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

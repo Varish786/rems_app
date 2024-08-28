@@ -1,1 +1,5 @@
-renewable_app
+Energy Production Tracking Module
+Consumption Analysis Module
+Maintenance Alerts Module
+Grid Integration Module
+User Management Module

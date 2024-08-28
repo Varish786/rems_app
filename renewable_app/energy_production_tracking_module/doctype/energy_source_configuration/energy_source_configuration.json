@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "ESC-.####",
+ "creation": "2024-08-25 16:38:35.324705",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "source_id",
+  "source_type",
+  "capacity",
+  "installation_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_id",
+   "fieldtype": "Data",
+   "label": "Source ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "source_type",
+   "fieldtype": "Select",
+   "label": "Source Type",
+   "options": "Solar\nWind\nHydro"
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Float",
+   "label": "Capacity "
+  },
+  {
+   "fieldname": "installation_date",
+   "fieldtype": "Date",
+   "label": "Installation Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-28 11:08:39.221635",
+ "modified_by": "Administrator",
+ "module": "Energy Production Tracking Module",
+ "name": "Energy Source Configuration",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

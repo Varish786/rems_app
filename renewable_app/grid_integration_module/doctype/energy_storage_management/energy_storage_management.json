@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "ESM-.####",
+ "creation": "2024-08-25 17:34:16.978925",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "storage_id",
+  "capacity",
+  "current_level",
+  "source_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "storage_id",
+   "fieldtype": "Data",
+   "label": "Storage ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Float",
+   "label": "Capacity"
+  },
+  {
+   "fieldname": "current_level",
+   "fieldtype": "Float",
+   "label": "Current Level"
+  },
+  {
+   "fieldname": "source_id",
+   "fieldtype": "Link",
+   "label": "Source ID",
+   "options": "Energy Source Configuration"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-28 11:04:45.723573",
+ "modified_by": "Administrator",
+ "module": "Grid Integration Module",
+ "name": "Energy Storage Management",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

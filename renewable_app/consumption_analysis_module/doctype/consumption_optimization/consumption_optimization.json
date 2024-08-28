@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "CO-.####",
+ "creation": "2024-08-25 17:06:34.618438",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "optimization_id",
+  "consumer_id",
+  "suggested_actions",
+  "potential_savings"
+ ],
+ "fields": [
+  {
+   "fieldname": "optimization_id",
+   "fieldtype": "Data",
+   "label": "Optimization ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "consumer_id",
+   "fieldtype": "Link",
+   "label": "Consumer ID",
+   "options": "RenewableEnergy_User"
+  },
+  {
+   "fieldname": "suggested_actions",
+   "fieldtype": "Text",
+   "label": "Suggested Actions"
+  },
+  {
+   "fieldname": "potential_savings",
+   "fieldtype": "Float",
+   "label": "Potential Savings"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-28 11:07:21.773734",
+ "modified_by": "Administrator",
+ "module": "Consumption Analysis Module",
+ "name": "Consumption Optimization",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

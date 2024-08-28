@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "GID-.####",
+ "creation": "2024-08-25 17:31:48.727746",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "integration_id",
+  "source_id",
+  "grid_location",
+  "energy_flow",
+  "timestamp"
+ ],
+ "fields": [
+  {
+   "fieldname": "integration_id",
+   "fieldtype": "Data",
+   "label": "Integration ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "source_id",
+   "fieldtype": "Link",
+   "label": "Source ID",
+   "options": "Energy Source Configuration"
+  },
+  {
+   "fieldname": "grid_location",
+   "fieldtype": "Data",
+   "label": "Grid Location"
+  },
+  {
+   "fieldname": "energy_flow",
+   "fieldtype": "Float",
+   "label": "Energy Flow"
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "label": "Timestamp"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-28 11:05:25.011812",
+ "modified_by": "Administrator",
+ "module": "Grid Integration Module",
+ "name": "Grid Integration Data",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

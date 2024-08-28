@@ -1,0 +1,101 @@
+{% extends "templates/web.html" %}
+
+{% block head %}
+<title>Consumer Dashboard</title>
+<link rel="icon" type="image/x-icon" href="/assets/renewable_app/images/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/renewable_app/css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+    .row {
+        display: none;
+    }
+
+    nav.navbar.navbar-light.navbar-expand-lg {
+        display: none;
+    }
+</style>
+{% endblock %}
+
+{% block script %}
+<script src="/assets/renewable_app/js/consumer_dashboard.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/renewable_app/images/logo.png" alt="Logo" style="height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="operator_dashboard">Operator Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin_dashboard">Admin Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="consumer_dashboard">Consumer Dashboard</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="consumer-dashboard" class="container py-5">
+            <h2 class="mb-4">Consumer Dashboard</h2>
+
+            <!-- Energy Consumption Data -->
+            <div class="mb-5">
+                <h3>Energy Consumption Data</h3>
+                <p>Track your energy usage over time and identify areas for improvement.</p>
+                <div id="consumption-report">
+                    <!-- The table will be dynamically inserted here -->
+                </div>
+
+            </div>
+
+            <div class="container py-5">
+                <h2 class="mb-2">Energy Consumption Chart</h2>
+                <div class="bar_chart_div">
+                    <canvas id="energyChart" width="400" height="100"></canvas>
+                </div>
+               
+            </div>
+
+            <!-- Optimization Suggestions -->
+            <div class="mb-5">
+                <h3>Optimization Suggestions</h3>
+                <p>Receive personalized tips to reduce your energy consumption and save on costs.</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Install energy-efficient appliances.</li>
+                    <li class="list-group-item">Reduce usage during peak hours.</li>
+                    <li class="list-group-item">Consider renewable energy options.</li>
+                    <li class="list-group-item">Monitor and adjust thermostat settings.</li>
+                    <li class="list-group-item">Use LED lighting instead of incandescent bulbs.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+{% endblock %}

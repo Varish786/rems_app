@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "EPD-.####",
+ "creation": "2024-08-25 16:34:04.165658",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "source_id",
+  "location",
+  "energy_type",
+  "production_amount",
+  "timestamp"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_id",
+   "fieldtype": "Link",
+   "label": "Source ID",
+   "options": "Energy Source Configuration"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location "
+  },
+  {
+   "fieldname": "energy_type",
+   "fieldtype": "Select",
+   "label": "Energy Type",
+   "options": "Solar\nWind\nHydro"
+  },
+  {
+   "fieldname": "production_amount",
+   "fieldtype": "Float",
+   "label": "Production Amount"
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "label": "Timestamp"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-28 11:08:23.613026",
+ "modified_by": "Administrator",
+ "module": "Energy Production Tracking Module",
+ "name": "Energy Production Data",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
